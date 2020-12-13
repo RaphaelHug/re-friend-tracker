@@ -420,7 +420,7 @@ export class GuiModel {
                             "icon": "fa-calendar-alt",
                             "color": "emerald",
                             "form": {
-                                "form": "ActivityForm"
+                                "form": "ActivityForm" 
                             }
                         },
                         {
