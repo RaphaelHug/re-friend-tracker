@@ -429,9 +429,7 @@ export class GuiModel {
                             "color": "yellow",
                             "search": true,
                             "url": "/activity/:activityKey/friend",
-                            "form": {
-                            "form": "selectedactivitypage"
-                            }
+                            "page": "selectedfriendspage"
                         },
                     ]
                 }
