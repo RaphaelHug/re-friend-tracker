@@ -142,6 +142,35 @@ export class GuiModel {
                     ]
                 },
                 {
+                    "id": "AddFriendForm",
+                    "title": "Friend",
+                    "url": "/friend/:friendKey/activity",
+                    "formFieldList": [
+                        {
+                            "id":   "friend",
+                            "type": "autocomplete",
+                            "name": "Friend",
+                            "url": "/friend",
+                            "defaultKey": "friendKey",
+                            "readonly": true,
+                            "form": "FriendForm",
+                            "width": 2
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
+                {
                     "id": "GroupForm",
                     "title": "Group",
                     "url": "/group",
@@ -310,8 +339,8 @@ export class GuiModel {
                         {
                             "type": "newButton",
                             "name": "AddActivity",
-                            "icon": "fa-user",
-                            "color": "green",
+                            "icon": "fa-calendar-alt",
+                            "color": "emerald",
                             "form": {
                                 "form": "AddActivityForm"
                             }
@@ -421,6 +450,15 @@ export class GuiModel {
                             "color": "emerald",
                             "form": {
                                 "form": "ActivityForm" 
+                            }
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "AddFriend",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "form": {
+                                "form": "AddFriendForm"
                             }
                         },
                         {
